@@ -9,8 +9,11 @@ cd DeepBiomeCNN
 pip install -r requirements.txt
 ```
 
+link to download train set (Google Drive), download the trainset and extract in the data folder.
+
+[Download here](https://drive.google.com/drive/folders/1Sn-OYBVNYAagYASFGuup7g6W_sNy85Kn?usp=sharing) 
+
 Now in order to train the model run the follow script:
 ```bash
 python src/train.py
 ```
-
