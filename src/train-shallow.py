@@ -388,7 +388,7 @@ for epoch in range(start_epoch, max_epochs):
             img, lbl = img.to(device), lbl.to(device)
             emb, logit = model(img)
             
-            v_loss += (criterion_cls(logit, lbl) + (1.2 * criterion_tri(emb, lbl))).item()
+            v_loss += (criterion_cls(logit, lbl) + (alpha * criterion_tri(emb, lbl))).item()
             v_correct += logit.max(1)[1].eq(lbl).sum().item()
             v_total += lbl.size(0)
             all_embs.append(emb); all_lbls.append(lbl)
