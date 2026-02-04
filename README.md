@@ -17,3 +17,9 @@ Now in order to train the model run the follow script:
 ```bash
 python src/train.py
 ```
+In order to test the model run 
+```bash
+python src/test.py
+```
+This runs the model that was trained previously. Do note that the training scripts try and find a model if it exists so you need to delete the ".pth" file in order to create a completely new model. 
+The train and test script create images in the src folder. 
